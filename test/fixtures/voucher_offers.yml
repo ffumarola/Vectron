@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  voucher_id: 1
+  consumer_id: 1
+  accepted: false
+  active: false
+
+two:
+  voucher_id: 1
+  consumer_id: 1
+  accepted: false
+  active: false

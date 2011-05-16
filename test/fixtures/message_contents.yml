@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  from_id: 1
+  subject: MyString
+  body: MyText
+  message_type_id: 1
+
+two:
+  from_id: 1
+  subject: MyString
+  body: MyText
+  message_type_id: 1

@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  consumer_id: 1
+  event_type_id: 1
+  user_value: 1
+  system_value: 1
+
+two:
+  consumer_id: 1
+  event_type_id: 1
+  user_value: 1
+  system_value: 1
