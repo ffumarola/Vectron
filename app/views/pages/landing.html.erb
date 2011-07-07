@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+	<title>UsherBuddy | Last-Minute Ticket Deals</title>
+    <script type="text/javascript" src="assets/supersized.core.3.2.1.js"></script>
+	<script type="text/javascript">
+	$("document").ready(function() {
+		$('.button-landing-1').click(function(){
+		$(".form-step1-landing").animate({"left": "-70%","opacity":0.3},1500);
+		$(".form-step2-landing").animate({"left": "10%","opacity":1},1500);
+		 });
+	});
+	</script>
+</head>
+
+<body id="landing">
+<div id="supersized">       
+    <img src="../images/bg/bg_curtain.jpg" />
+</div><!--end #supersized-->
+<div id="supersized">
+    <img src="../images/bg/buddy.png" />
+</div><!--end #supersized-->
+    <div id="wrapper">
+    
+         
+    
+        <form action="index2.html" id="register" method="post">
+            <section class="form-landing form-step1-landing">
+                <div class="form-landing-container">
+                    <div class="landing-step">
+                        <img alt="Step 1 of 2" src="images/step_1.png"/>			
+                    </div><!--end .landing-step-->
+                    <fieldset>
+                        <h2>Confirm your city :</h2>
+                        <select id="select_location" name="Location">
+                            <option value="NYC">NYC</option>
+                            <option value="Boston">Boston</option>
+                            <option value="Baltimore">Baltimore</option>
+                            <option value="DC">DC</option>
+                            <option value="Philadelphia">Philadelphia</option>
+                            <option value="etc">etc</option>
+                        </select>
+                    </fieldset>
+                    <div class="button-landing">
+                        <a class="button-landing-1" href="#" id="step_one" onclick="; return false;">Continue</a>
+                    </div><!--end .button-landing-->
+                </div>	<!--end .form-landing-container-->
+            </section>
+            
+            <section class="form-landing form-step2-landing formhide">
+                <div class="form-landing-container">
+                    <div class="landing-step">
+                        <img alt="Step 2 of 2" src="images/step_2.png"/>
+                    </div><!--end .landing-step-->
+                    <fieldset>
+                        <h2>Enter your email :</h2>
+                        <div class="email_field">
+                            <label class="hide" for="subscription_email_address">&nbsp;</label>
+                            <input value="" id="subscription_email_address" name="subscription[email_address]" size="30" title="Please enter a valid email address." type="text">
+                        </div><!--end .email_field-->
+                        <p>Don't worry, your email is safe with us.</p>
+                    </fieldset>
+                    <div class="button-landing">
+                        <input class="button-landing-2" id="subscription_submit" name="commit" value="Ready to go out?" type="submit">
+                    </div><!--end .button-landing-->
+                </div><!--end .form-landing-container-->
+            </section>
+        </form> <!--end form id register-->
+  </div><!--end #wrapper-->
+  
+  	<div id="footer-wrap-landing">
+    	<div class="c33l">
+            <ul>
+             	<li><a href="about.html">About</a> |</li> 
+                <li><a href="jobs.html">Careers</a> |</li> 
+                <li><a href="index.html">For Businesses</a> |</li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+         </div><!--end .c33l-->
+         <div class="c33lc">
+            <p>Copyright 2011 UsherBuddy Inc. All Rights Reserved.</p>
+         </div><!--end .c33lc-->
+         <div class="c33r">
+            <ul>
+             	<li><a href="#"><img src="images/icons/android.png" height="26px" width="auto" /></a></li>
+                <li><a href="#"><img src="images/icons/apple.png" height="26px" width="auto" /></a> | </li>
+                <li><a href="#"><img src="images/icons/facebook.png" height="26px" width="auto" /></a></li>
+                <li><a href="#"><img src="images/icons/twitter.png" height="26px" width="auto" /></a></li>
+            </ul>
+         </div><!--end .c33r-->
+    </div><!--end #footer-wrap-landing-->
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+              <h1><%= @business.name %></h1>
+              
+              <p>
+                <b>Business Description:</b>
+                <%= @business.description %>
+              </p>
+              
+              <p>
+                <b>Address:</b>
+                <%= @business.address %>
+              </p>
+              
+              <p>
+                <b>Zip Code:</b>
+                <%= @business.zip_code %>
+              </p>
+              
+              <p>
+                <b>Phone Number:</b>
+                <%= @business.phone %>
+              </p>
+              
+              <p>
+                <b>Operating hours:</b>
+                <%= @business.operating_hours %>
+              </p>
+              
+              <br />
+              
+              <h1>Vouchers</h1>
+              
+              <table>
+                <tr>
+                  <th></th>
+                  <th>Event type</th>
+                  <th>Description</th>
+                  <th>Event time</th>
+                  <th>Offer lifespan minutes</th>
+                  <th>Max offers</th>
+                  <th>Voucher price cents</th>
+                  <th>Full value cents</th>
+                  <th>Active</th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              
+              <% @business.vouchers.each do |voucher| %>
+                <tr>
+                  <td><b><%= voucher.name %></b></td>
+                  <td><%= EventType.find(voucher.event_type_id).name %></td>
+                  <td><%= voucher.description %></td>
+                  <td><%= voucher.event_time %></td>
+                  <td><%= voucher.offer_lifespan_minutes %></td>
+                  <td><%= voucher.max_offers %></td>
+                  <td><%= voucher.voucher_price_cents %></td>
+                  <td><%= voucher.full_value_cents %></td>
+                  <td><%= voucher.active %></td>
+                </tr>
+              <% end %>
+              </table>
+
+              <br />
+              <div class="btn btn_new"><%= link_to 'New Voucher', new_voucher_path %><span></span></div>
+              <br />

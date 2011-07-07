@@ -15,3 +15,19 @@ ActionMailer::Base.smtp_settings = {
   :user_name => 'jcsicsek',
   :password => 'bigwig'
 }
+
+module ActiveMerchant
+  module Utils
+    def get_payment_gateway
+      gateway = ActiveMerchant::Billing::AuthorizeNetCimGateway.new(
+        :login => "58gNu2ByE",
+        :password => "22sUy3K33u37uEq5",
+        :test => ENV['RAILS_ENV'] != 'production' ? true : false
+      )
+      if not gateway
+        raise AuthenticationFailed, 'Authentication with CIM Gateway could not be completed.'
+      end
+      return gateway
+    end
+  end
+end

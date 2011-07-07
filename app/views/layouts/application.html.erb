@@ -1,14 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Vectron</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
+<link href="../stylesheets/style.css" media="screen" rel="stylesheet" type="text/css">	
+<link href="../stylesheets/typography.css" media="screen" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../javascripts/jquery-1.6.1.js"></script>
+<script type="text/javascript" src="../javascripts/jquery.validate.js"></script>
 
-<%= yield %>
+<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-23834846-3']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+</script>
+<!--[if IE]>
+	<script type="text/javascript" src="../assets/modernizr-1.7.min.js"></script>
+<![endif]--> 
+<!--[if lt IE 7]>
+	<script type="text/javascript" src="../assets/unitpngfix.js"></script>
+<![endif]-->
 
-</body>
+  <body>
+    <%= render 'layouts/header' %>
+      <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <% end %>
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+  </body>
 </html>

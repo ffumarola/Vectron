@@ -14,8 +14,12 @@ Vectron::Application.routes.draw do
   get "voucher/show"
 
   get "voucher/edit"
+  
+  get "voucher/new"
 
-  get "business/home"
+  get "business/show"
+  
+  get "business/new"
 
   get "business/create"
 
@@ -34,8 +38,49 @@ Vectron::Application.routes.draw do
   get "pages/about"
 
   get "pages/help"
+  
+  resources :event_types
+  
+  resources :interest_levels
+  
+  resources :businesses
+  
+  resources :vouchers
 
-  devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+  
+  namespace :user do
+    root :to => "businesses#show"
+  end
+  
+  root :to => 'pages#home'
+  
+  match '/home', :to => 'pages#home'
+  match '/about', :to => 'pages#about'
+  match '/abuse', :to => 'pages#abuse'
+  match '/account', :to => 'pages#account'
+  match '/contact', :to => 'pages#contact'
+  match '/deal', :to => 'pages#deal'
+  match '/dev', :to => 'pages#dev'
+  match '/jobs', :to => 'pages#jobs'
+  match '/landing', :to => 'pages#landing'
+  match '/login', :to => 'pages#login'
+  match '/privacy', :to => 'pages#privacy'
+  match '/signup', :to => 'pages#signup'
+  match '/terms', :to => 'pages#home'
+  match '/home', :to => 'pages#home'
+  
+  
+  #match '/business/home', :to => 'business#create'
+  
+  #match '/business/create',  :to => 'business#home'
+  
+  match '/businesses/home', :to => 'businesses#show'
+  
+  #match '/vouchers', :to => 'businesses#show'
+  
+  #match '/getvouchers', :to => 'vouchers#index'
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

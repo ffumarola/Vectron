@@ -1,2 +1,21 @@
-<h1>Consumer#create</h1>
-<p>Find me in app/views/consumer/create.html.erb</p>
+ <div id="main">
+    <div class="page_margins">
+      <div class="page"> 
+        <h1>Welcome to Usher Buddy!</h1>
+  <%= semantic_form_for @consumer, :url => consumer_home_path do |form| %>
+    <%= form.inputs do %>
+      <%= form.input :zip_code %>
+      <%= form.input :event_types %>
+    <% end %>
+    <%= form.buttons %>
+  <% end %>
+
+
+        
+        
+        <br />
+        <br />
+        <br />
+      </div>
+    </div>
+ </div>

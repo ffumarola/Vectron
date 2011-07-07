@@ -6,8 +6,17 @@ gem 'rails', '3.0.7'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'devise', '1.1.rc0'
-gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+gem 'devise', '1.3.4'
+#gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+gem 'oa-oauth', :require => 'omniauth/oauth'
+gem 'oa-openid', :require => 'omniauth/openid'
+gem 'formtastic', '~> 1.2.3'
+gem 'mongrel', '1.2.0.pre2', :group => :development
+gem 'httparty'
+gem 'chronic'
+gem 'scrapi'
+gem 'activemerchant'
+
 
 # Use unicorn as the web server
 # gem 'unicorn'

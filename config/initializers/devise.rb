@@ -2,7 +2,19 @@
 # four configuration values can also be set straight in your models.
 Devise.setup do |config|
   # Configure the e-mail address which will be shown in DeviseMailer.
+  require 'openid/store/filesystem'
   config.mailer_sender = "please-change-me@config-initializers-devise.com"
+  
+  config.authentication_keys = [ :login ]
+  
+  config.omniauth :facebook, "130687390342032", "67f4333ef08bd2bff04e45d9e1efff50"
+  
+  config.omniauth :open_id, OpenID::Store::Filesystem.new('/tmp')
+  config.omniauth :open_id, OpenID::Store::Filesystem.new('/tmp'), :name => 'google', :identifier => 'https://www.google.com/accounts/o8/id'
+  config.omniauth :google_apps, OpenID::Store::Filesystem.new('/tmp'), :domain => 'gmail.com'
+  
+
+
 
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating an user. By default is
@@ -85,6 +97,7 @@ Devise.setup do |config|
   # Load and configure the ORM. Supports :active_record (default), :mongoid
   # (requires mongo_ext installed) and :data_mapper (experimental).
   require 'devise/orm/active_record'
+
 
   # Turn scoped views on. Before rendering "sessions/new", it will first check for
   # "sessions/users/new". It's turned off by default because it's slower if you

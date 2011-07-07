@@ -1,0 +1,41 @@
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS Framework
+ *
+ * (en) central stylesheet - layout example "3col_standard"
+ *
+ * @copyright       Copyright 2005-2010, Dirk Jesse
+ * @license         CC-A 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-C (http://www.yaml.de/en/license/license-conditions.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ * @version         3.3
+ * @revision        $Revision: 466 $
+ * @lastmodified    $Date: 2010-09-14 21:19:30 +0200 (Di, 14 Sep 2010) $
+ */
+
+/* import core styles */
+@import url(base.css);
+
+/* import screen layout */
+@import url(screen/basemod_grids.css);
+@import url(screen/content.css);
+
+/* import print layout */
+@import url(print/print_draft.css);
+
+/* import custom files */
+@import url(colorbox.css);  /*For color box pop up*/
+@import url(slide.css);  /*For slider*/
+@import url(contact.css);  /*For contact popup*/
+
+#li_1 label.choice {
+	display:inline;
+	position:relative;
+	margin-left: 0.2em;
+	_top:0.2em;
+}
+
+#li_1 input.radio {
+	display: inline;
+	margin-left: 0.5em;
+}

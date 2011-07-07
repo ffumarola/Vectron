@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html>
+
+  <head>
+    <title>UsherBuddy | No Seat Left Behind</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+    <%= csrf_meta_tag %>
+    <%= render 'layouts/stylesheets' %>
+    <%= javascript_include_tag :all %>
+	<title>UsherBuddy | Last-Minute Ticket Deals</title>
+    <link href="stylesheets/style.css" media="screen" rel="stylesheet" type="text/css">	
+    <link href="stylesheets/typography.css" media="screen" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="javascripts/lib/jquery-1.6.1.js"></script>
+	<!--[if IE]>
+		<script type="text/javascript" src="assets/modernizr-1.7.min.js"></script>
+	<![endif]--> 
+	<!--[if lt IE 7]>
+		<script type="text/javascript" src="assets/unitpngfix.js"></script>
+	<![endif]-->
+  </head>
+  <body>
+    <%= render 'layouts/header' %>
+      <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <% end %>
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+  </body>
+</html>

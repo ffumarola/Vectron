@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<dropdown>
+	<menuitem>
+    	<title>Maryland</title>
+ 		<values>
+ 			<value>Baltimore</value>
+ 		</values>
+ 	</menuitem>
+	<menuitem>
+    	<title>New York</title>
+ 		<values>
+		 	<value>NYC, Brooklyn</value>
+ 			<value>NYC, Manhattan</value>
+ 			<value>NYC, Queens</value>
+ 		</values>
+ 	</menuitem>
+   	<menuitem>
+    	<title>Pennsylvania</title>
+ 		<values>
+ 			<value>Philadelphia</value>
+ 			<value>Pittsburgh</value>
+ 		</values>
+ 	</menuitem>
+ </dropdown>

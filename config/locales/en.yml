@@ -3,3 +3,7 @@
 
 en:
   hello: "Hello world"
+
+en:
+  formtastic:
+    submit: "Submit"

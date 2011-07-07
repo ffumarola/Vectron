@@ -1,0 +1,560 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head> 
+	<title>UsherBuddy | Last-Minute Ticket Deals</title>
+     
+    <script type="text/javascript">
+			$(document).ready(function() {
+		
+			//When page loads...
+			$(".tab_content").hide(); //Hide all content
+			$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+			$(".tab_content:first").show(); //Show first tab content
+		
+			//On Click Event
+			$("ul.tabs li").click(function() {
+		
+				$("ul.tabs li").removeClass("active"); //Remove any "active" class
+				$(this).addClass("active"); //Add "active" class to selected tab
+				$(".tab_content").hide(); //Hide all tab content
+		
+				var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+				$(activeTab).fadeIn(); //Fade in the active ID content
+				return false;
+			});
+		
+		});
+	</script>
+    <script type="text/javascript">
+			$(document).ready(function() {
+		
+			//When page loads...
+			$(".myevents_content").hide(); //Hide all content
+			$("ul.myevents-tabs li:first").addClass("active").show(); //Activate first tab
+			$(".myevents_content:first").show(); //Show first tab content
+		
+			//On Click Event
+			$("ul.myevents-tabs li").click(function() {
+		
+				$("ul.myevents-tabs li").removeClass("active"); //Remove any "active" class
+				$(this).addClass("active"); //Add "active" class to selected tab
+				$(".myevents_content").hide(); //Hide all tab content
+		
+				var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+				$(activeTab).fadeIn(); //Fade in the active ID content
+				return false;
+			});
+		
+		});
+	</script>
+    <script type="text/javascript">
+			$(document).ready(function() {
+		
+			//When page loads...
+			$(".myaccount_content").hide(); //Hide all content
+			$("ul.myaccount-tabs li:first").addClass("active").show(); //Activate first tab
+			$(".myaccount_content:first").show(); //Show first tab content
+		
+			//On Click Event
+			$("ul.myaccount-tabs li").click(function() {
+		
+				$("ul.myaccount-tabs li").removeClass("active"); //Remove any "active" class
+				$(this).addClass("active"); //Add "active" class to selected tab
+				$(".myaccount_content").hide(); //Hide all tab content
+		
+				var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+				$(activeTab).fadeIn(); //Fade in the active ID content
+				return false;
+			});
+		
+		});
+	</script>
+</head>
+<body id="single">
+     
+    
+<div id="wrapper">
+     
+    
+    <div id="account">
+        <ul class="tabs">
+            <li><a href="#myevents">My Events</a></li>
+            <li><a href="#myaccount">My Account</a></li>
+            <li><a href="#myprofile">My Profile</a></li>
+            <li><a href="#myfavorites">My Favorites</a></li>
+        </ul><!--end .tabs-->
+    
+        <div class="tab_container">
+            <div id="myevents" class="tab_content">
+               <ul class="myevents-tabs">
+                    <li><a href="#all">All</a></li>
+                    <li><a href="#future">Future Events</a></li>
+                    <li><a href="#past">Past Events</a></li>
+                </ul><!--end .myevents-tabs-->
+                <div class="subnavigation_container">
+                    <div id="all" class="myevents_content">
+                       <div class="purchased_events">
+                            <table cellspacing="0" cellpadding="0" border="0" class="events_table">
+                              <tbody><tr>
+                                <th width="120">
+                                  <div class="td_pad">
+                                    <span style="visibility: hidden;">Image</span>
+                                  </div>
+                                </th>
+                                <th width="300">
+                                  <div class="td_pad">
+                                    Name
+                                  </div>
+                                </th>
+                                <th width="130">
+                                  <div class="desc td_pad">
+                                    <a href="sort by purchased date">Purchase Date</a>
+                                  </div>
+                                </th>
+                                <th width="130">
+                                  <div class="td_pad">
+                                    <a href="sort by expiration date">Expiration Date</a>
+                                  </div>
+                                </th>
+                              </tr>
+                              </tbody></table><table cellspacing="0" cellpadding="0" border="0" class="events_table">
+                                <tbody><tr valign="top" class="vouchers">
+                                  <td width="120">
+                                    <div class="td_pad">
+                                      <p class="avatar">
+                                        <a href="/venues/ps122"><img width="100" height="auto" title="PS122" src="images/featured_pic.jpg" alt="PS122"></a>
+                                      </p>
+                                      <p class="text_center">
+                                        <a href="order details">Order Details</a>
+                                      </p>
+                                      <p class="text_center">
+                                        <a href="print it">Print All</a>
+                                      </p>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" class="events_table">
+                                      <tbody><tr valign="top">
+                                        <td width="300">
+                                          <div class="td_pad">
+                                            <p class="margin_top_10 events_name">
+                                              <strong>
+                                                <a href="/venues/ps122">$20 for a 7/7/11 Show @ 7pm @  PS122</a>
+                                              </strong>
+                                            </p>
+                                          </div>
+                                        </td>
+                                        <td width="130">
+                                          <div class="td_pad">
+                                            <p>
+                                              May  6, 2011
+                                            </p>
+                                          </div>
+                                        </td>
+                                        <td width="130">
+                                          <div class="td_pad">
+                                            <p>
+                                              Sep  9, 2011
+                                            </p>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr valign="top" class="orders">
+                                        <td colspan="3">
+                                          <table style="border-left: 4px solid #f0f0f0; padding-left: 10px; margin: 0 0 10px 10px;" class="coupons_table">
+                                            <tbody><tr valign="top" id="orders_v1_voucher_44701220" class="used">
+                                              <td class="code">
+                                                <div style="padding: 0 0 0 5px;" class="td_pad">
+                                                  <p class="coupon_code">
+                                                    <strong>
+                                                      #33727170-0-1
+                                                    </strong>
+                                                  </p>
+                                                </div>
+                                              </td>
+                                              <td class="print">
+                                                <div style="padding: 0" class="td_pad">
+                                                  <p class="print_link">
+                                                    <a href="print it">Print</a>
+                                                  </p>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                          </tbody></table>
+                                        </td>
+                                      </tr>
+                                    </tbody></table>
+                                  </td>
+                                </tr>
+                              </tbody></table>
+                              <table cellspacing="0" cellpadding="0" border="0" class="events_table">
+                                <tbody><tr valign="top" class="vouchers">
+                                  <td width="120">
+                                    <div class="td_pad">
+                                      <p class="avatar">
+                                        <a href="/venues/ps122"><img width="100" height="auto" title="PS122" src="images/featured_pic.jpg" alt="PS122"></a>
+                                      </p>
+                                      <p class="text_center">
+                                        <a href="order details">Order Details</a>
+                                      </p>
+                                      <p class="text_center">
+                                        <a href="print it">Print All</a>
+                                      </p>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" class="events_table">
+                                      <tbody><tr valign="top">
+                                        <td width="300">
+                                          <div class="td_pad">
+                                            <p class="margin_top_10 events_name">
+                                              <strong>
+                                                <a href="/venues/ps122">$20 for a 7/7/11 Show @ 7pm @  PS122</a>
+                                              </strong>
+                                            </p>
+                                          </div>
+                                        </td>
+                                        <td width="130">
+                                          <div class="td_pad">
+                                            <p>
+                                              May  6, 2011
+                                            </p>
+                                          </div>
+                                        </td>
+                                        <td width="130">
+                                          <div class="td_pad">
+                                            <p>
+                                              Sep  9, 2011
+                                            </p>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr valign="top" class="orders">
+                                        <td colspan="3">
+                                          <table style="border-left: 4px solid #f0f0f0; padding-left: 10px; margin: 0 0 10px 10px;" class="coupons_table">
+                                            <tbody><tr valign="top" id="orders_v1_voucher_44701220" class="used">
+                                              <td class="code">
+                                                <div style="padding: 0 0 0 5px;" class="td_pad">
+                                                  <p class="coupon_code">
+                                                    <strong>
+                                                      #33727170-0-1
+                                                    </strong>
+                                                  </p>
+                                                </div>
+                                              </td>
+                                              <td class="print">
+                                                <div style="padding: 0" class="td_pad">
+                                                  <p class="print_link">
+                                                    <a href="print it">Print</a>
+                                                  </p>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                          </tbody></table>
+                                        </td>
+                                      </tr>
+                                    </tbody></table>
+                                  </td>
+                                </tr>
+                              </tbody></table>
+          				</div><!--end .purchased_events-->
+                    </div><!--end #all .myevents_content-->
+                    <div id="future" class="myevents_content">
+                       <p>Future events</p>
+                    </div><!--end #future .myevents_content-->
+                    <div id="past" class="myevents_content">
+                       <p>Past events</p>
+                    </div><!--end #past .myevents_content-->
+                </div><!--end .subnavigation_container-->
+            </div><!--end #myevents-->
+            <div id="myaccount" class="tab_content">
+               <ul class="myaccount-tabs">
+                    <li><a href="#accountinfo">Account</a></li>
+                    <li><a href="#creditcards">Credit Cards</a></li>
+                </ul>
+                <div class="subnavigation_container">
+                    <div id="accountinfo" class="myaccount_content">
+                       <form method="post" id="myaccount">
+                           <div class="row">
+                                <label for="first_name">First Name:</label>
+                                <input type="text" tabindex="1" size="30" name="first_name" id="first_name">
+                            </div>
+                            <div class="row">
+                                <label for="last_name">Last Name:</label>
+                                <input type="text" tabindex="2" size="30" name="last_name" id="last_name">
+                            </div>
+                            <div class="row requiredRow">
+                                <label for="email">Email Address:</label>
+                      			<input type="email" tabindex="3" size="30" name="email" id="email">
+                            </div>
+                            <div class="row">
+                                <label for="image">Image</label>
+                                <input type="image" tabindex="3" size="30" name="image" id="image">
+                            </div>
+                            <div class="row">
+                                <label for="timezone">Time Zone:</label>
+                                <select tabindex="4" id="timezone" name="timezone">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <div class="row requiredRow">
+                                <label for="password">New Password</label>
+                                <input id="password" name="password" type="password" class="required" title="New Password. This is a required field" />
+                            </div>
+                            <div class="row requiredRow">
+                                <label for="password_confirm">Confirm New Password</label>
+                                <input id="password_confirm" name="password_confirm" type="password" class="required" title="Retype Password. This is a required field" />
+                            </div>
+                            <div class="row">
+                            <input type="submit" value="Save" />
+                            </div>
+                        </form>
+                    </div><!--end #accountinfo-->
+                    <div id="creditcards" class="myaccount_content">
+                       <form method="post" id="add-creditcard">
+                            <div class="row requiredRow">
+                                <label for="txt_CardholderName" id="CardholderName-ariaLabel">Cardholder Name</label>
+                                <input id="txt_CardholderName" name="txt_CardholderName" type="text" aria-labelledby="CardholderName-ariaLabel" class="required" title="Cardholder Name. This is a required field" />
+                            </div>
+                            <div class="row requiredRow">
+                                <label for="txt_CardNumber" id="CardNumber-ariaLabel">Card Number</label>
+                                <input id="txt_CardNumber" name="txt_CardNumber" type="text" aria-labelledby="CardNumber-ariaLabel" class="required" title="Card Number. This is a required field" />
+                            </div>
+                            <div class="row requiredRow">
+                                <label for="txt_SecurityCode" id="SecurityCode-ariaLabel">Security Code</label>
+                                <input id="txt_SecurityCode" name="txt_SecurityCode" type="text" aria-labelledby="SecurityCode-ariaLabel" class="required" title="Security Code. This is a required field" />
+                            </div>
+                            <div class="row requiredRow">
+                                <label for="txt_ExpirationDate" id="ExpirationDate-ariaLabel">Expiration Date</label>
+                                <input id="txt_ExpirationDate" name="txt_ExpirationDate" type="text" aria-labelledby="ExpirationDate-ariaLabel" class="required" title="Expiration Date. This is a required field" />
+                            </div>
+                            <div class="row requiredRow">
+                                <label for="txt_BillingAddress" id="BillingAddress-ariaLabel">Billing Address</label>
+                                <input id="txt_BillingAddress" name="txt_BillingAddress" type="text" aria-labelledby="BillingAddress-ariaLabel" class="required" title="Billing Address. This is a required field" />
+                            </div>
+                            <div class="row requiredRow">
+                                <label for="txt_City" id="City-ariaLabel">City</label>
+                                <input id="txt_City" name="txt_City" type="text" aria-labelledby="City-ariaLabel" class="required" title="City. This is a required field" />
+                            </div>
+                            <div class="row requiredRow">
+                                <label for="txt_StateProvince" id="StateProvince-ariaLabel">State/Province</label>
+                                <input id="txt_StateProvince" name="txt_StateProvince" type="text" aria-labelledby="StateProvince-ariaLabel" class="required" title="State/Province. This is a required field" />
+                            </div>
+                            <div class="row requiredRow">
+                                <label for="txt_PostalCode" id="PostalCode-ariaLabel">Postal Code</label>
+                                <input id="txt_PostalCode" name="txt_PostalCode" type="text" aria-labelledby="PostalCode-ariaLabel" class="required" title="Postal Code. This is a required field" />
+                            </div>
+                            <div class="row">
+                            <input type="submit" value="Save" />
+                            </div>
+                        </form>
+                    </div><!--end #creditcards-->
+                </div><!--end #subnavigation_container-->
+            </div><!--end #myaccount-->
+            <div id="myprofile" class="tab_content">
+                <div id="my_preferences">
+                	<form method="post" id="myprofile">
+                        <div class="row">
+                            <label for="sel_Gender" id="Gender-ariaLabel">Gender</label>
+                            <select id="sel_Gender" name="sel_Gender" aria-labelledby="Gender-ariaLabel">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Prefer not to say">Prefer not to say</option>
+                            </select>
+                        </div>
+                        <div class="row requiredRow">
+                            <label for="txt_Zipcode" id="Zipcode-ariaLabel">Zipcode</label>
+                            <input id="txt_Zipcode" name="txt_Zipcode" type="text" aria-labelledby="Zipcode-ariaLabel" class="required" title="Zipcode. This is a required field" />
+                        </div>
+                        <div class="row">
+                            <label for="Birthday" id="Birthday-ariaLabel">Birthday</label>
+                            <input id="Birthday" name="Birthday" type="date" aria-labelledby="Birthday-ariaLabel" title="Zipcode. This is a required field" />
+                        </div>
+                        <h3>Live Music</h3>
+                        <div class="row25l">
+                            <input id="chk_LiveMusic" name="chk_LiveMusic" type="checkbox" aria-labelledby="LiveMusic-ariaLabel" title="Type of Event. Tell us if you like this event type." /><span><label for="chk_LiveMusic" id="LiveMusic-ariaLabel">Live Music</label></span>
+						</div>
+                        <div class="row25l">
+                            <input id="chk_LiveMusic" name="chk_LiveMusic" type="checkbox" aria-labelledby="LiveMusic-ariaLabel" title="Type of Event. Tell us if you like this event type." /><span><label for="chk_LiveMusic" id="LiveMusic-ariaLabel">Live Music</label></span>
+						</div>
+                        <div class="row25l">
+                            <input id="chk_LiveMusic" name="chk_LiveMusic" type="checkbox" aria-labelledby="LiveMusic-ariaLabel" title="Type of Event. Tell us if you like this event type." /><span><label for="chk_LiveMusic" id="LiveMusic-ariaLabel">Live Music</label></span>
+						</div>
+                        <div class="row25l">
+                            <input id="chk_LiveMusic" name="chk_LiveMusic" type="checkbox" aria-labelledby="LiveMusic-ariaLabel" title="Type of Event. Tell us if you like this event type." /><span><label for="chk_LiveMusic" id="LiveMusic-ariaLabel">Live Music</label></span>
+						</div>
+                        <div class="row25l">
+                            <input id="chk_LiveMusic" name="chk_LiveMusic" type="checkbox" aria-labelledby="LiveMusic-ariaLabel" title="Type of Event. Tell us if you like this event type." /><span><label for="chk_LiveMusic" id="LiveMusic-ariaLabel">Live Music</label></span>
+						</div>
+                        <div class="row25l">
+                            <input id="chk_LiveMusic" name="chk_LiveMusic" type="checkbox" aria-labelledby="LiveMusic-ariaLabel" title="Type of Event. Tell us if you like this event type." /><span><label for="chk_LiveMusic" id="LiveMusic-ariaLabel">Live Music</label></span>
+						</div>
+                        <div class="row25l">
+                            <input id="chk_LiveMusic" name="chk_LiveMusic" type="checkbox" aria-labelledby="LiveMusic-ariaLabel" title="Type of Event. Tell us if you like this event type." /><span><label for="chk_LiveMusic" id="LiveMusic-ariaLabel">Live Music</label></span>
+						</div>
+                        <div class="row25l">
+                            <input id="chk_LiveMusic" name="chk_LiveMusic" type="checkbox" aria-labelledby="LiveMusic-ariaLabel" title="Type of Event. Tell us if you like this event type." /><span><label for="chk_LiveMusic" id="LiveMusic-ariaLabel">Live Music</label></span>
+						</div>
+                        <h3>Theater</h3>
+                        <div class="row25l">
+                            <input id="chk_Theater" name="chk_Theater" type="checkbox" aria-labelledby="Theater-ariaLabel" title="Type of Event. Tell us if you like this event type." /><span><label for="chk_Theater" id="Theater-ariaLabel">Theater</label></span>
+						</div>
+                        <div class="row25l">
+                            <input id="chk_Theater" name="chk_Theater" type="checkbox" aria-labelledby="Theater-ariaLabel" title="Type of Event. Tell us if you like this event type." /><span><label for="chk_Theater" id="Theater-ariaLabel">Theater</label></span>
+						</div>
+                        <div class="row25l">
+                            <input id="chk_Theater" name="chk_Theater" type="checkbox" aria-labelledby="Theater-ariaLabel" title="Type of Event. Tell us if you like this event type." /><span><label for="chk_Theater" id="Theater-ariaLabel">Theater</label></span>
+						</div>
+                        <div class="row25l">
+                            <input id="chk_Theater" name="chk_Theater" type="checkbox" aria-labelledby="Theater-ariaLabel" title="Type of Event. Tell us if you like this event type." /><span><label for="chk_Theater" id="Theater-ariaLabel">Theater</label></span>
+						</div>
+                        <h3>Comedy</h3>
+                        <div class="row25l">
+                            <input id="chk_Comedy" name="chk_Comedy" type="checkbox" aria-labelledby="Comedy-ariaLabel" title="Type of Event. Tell us if you like this event type." /><span><label for="chk_Comedy" id="Comedy-ariaLabel">Comedy</label></span>
+						</div>
+                        <div class="row25l">
+                            <input id="chk_Comedy" name="chk_Comedy" type="checkbox" aria-labelledby="Comedy-ariaLabel" title="Type of Event. Tell us if you like this event type." /><span><label for="chk_Comedy" id="Comedy-ariaLabel">Comedy</label></span>
+						</div>
+                        <div class="row25l">
+                            <input id="chk_Comedy" name="chk_Comedy" type="checkbox" aria-labelledby="Comedy-ariaLabel" title="Type of Event. Tell us if you like this event type." /><span><label for="chk_Comedy" id="Comedy-ariaLabel">Comedy</label></span>
+						</div>
+                        <div class="row25l">
+                            <input id="chk_Comedy" name="chk_Comedy" type="checkbox" aria-labelledby="Comedy-ariaLabel" title="Type of Event. Tell us if you like this event type." /><span><label for="chk_Comedy" id="Comedy-ariaLabel">Comedy</label></span>
+						</div>
+                        <h3>Other</h3>
+                        <div class="row25l">
+                            <input id="chk_Movie" name="chk_Movie" type="checkbox" aria-labelledby="Movie-ariaLabel" title="Type of Event. Tell us if you like this event type." /><span><label for="Movie_Comedy" id="Movie-ariaLabel">Movie</label></span>
+						</div>
+                        <div class="row25l">
+                            <input id="chk_Film" name="chk_Film" type="checkbox" aria-labelledby="Film-ariaLabel" title="Type of Event. Tell us if you like this event type." /><span><label for="chk_Film" id="Film-ariaLabel">Film</label></span>
+						</div>
+                        <div class="row25l">
+                            <input id="chk_Poetry" name="chk_Poetry" type="checkbox" aria-labelledby="Poetry-ariaLabel" title="Type of Event. Tell us if you like this event type." /><span><label for="chk_Poetry" id="Poetry-ariaLabel">Poetry</label></span>
+						</div>
+                        <div class="row25l">
+                            <input id="chk_Other" name="chk_Other" type="checkbox" aria-labelledby="Other-ariaLabel" title="Type of Event. Tell us if you like this event type." /><span><label for="chk_Other" id="Other-ariaLabel">Other</label></span>
+						</div>
+                        <div class="row">
+                            <label for="sel_Education" id="Education-ariaLabel">Education</label>
+                            <select id="sel_Education" name="sel_Education" aria-labelledby="Education-ariaLabel">
+                                <option value="Some high school">Some high school</option>
+                                <option value="High school grad or equivalent">High school grad or equivalent</option>
+                                <option value="Trade or vocational">Trade or vocational</option>
+                                <option value="Some college">Some college</option>
+                                <option value="Associates degree">Associates degree</option>
+                                <option value="Bachelors degree">Bachelors degree</option>
+                                <option value="Professional degree">Professional degree</option>
+                                <option value="Prefer not to share">Prefer not to share</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="sel_Employment" id="Employment-ariaLabel">Employment</label>
+                            <select id="sel_Employment" name="sel_Employment" aria-labelledby="Employment-ariaLabel">
+                                <option value="Full-time">Full-time</option>
+                                <option value="Part-time">Part-time</option>
+                                <option value="Looking for work">Looking for work</option>
+                                <option value="Not looking for work">Not looking for work</option>
+                                <option value="Retired">Retired</option>
+                                <option value="Student">Student</option>
+                                <option value="Homemaker">Homemaker</option>
+                                <option value="Prefer not to share">Prefer not to share</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="sel_Income" id="Income-ariaLabel">Income</label>
+                            <select id="sel_Income" name="sel_Income" aria-labelledby="Income-ariaLabel">
+                                <option value="Under $20k">Under $20k</option>
+                                <option value="$20k - 30k">$20k - 30k</option>
+                                <option value="$30k - 40k">$30k - 40k</option>
+                                <option value="$40k - 50k">$40k - 50k</option>
+                                <option value="$50k - 70k">$50k - 70k</option>
+                                <option value="$70k - 100k">$70k - 100k</option>
+                                <option value="$100k - 150k">$100k - 150k</option>
+                                <option value="Over $150k">Over $150k</option>
+                                <option value="Prefer not to share">Prefer not to share</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="sel_House" id="House-ariaLabel">Own Your Home?</label>
+                            <select id="sel_House" name="sel_House" aria-labelledby="House-ariaLabel">
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Prefer not to say">Prefer not to say</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="sel_Relationship" id="Relationship-ariaLabel">Relationship Status</label>
+                            <select id="sel_Relationship" name="sel_Relationship" aria-labelledby="Relationship-ariaLabel">
+                                <option value="Single">Single</option>
+                                <option value="Attached">Attached</option>
+                                <option value="Married">Married</option>
+                                <option value="Separated">Separated</option>
+                                <option value="Divorced">Divorced</option>
+                                <option value="Widowed">Widowed</option>
+                                <option value="Prefer not to share">Prefer not to share</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="sel_Children" id="Children-ariaLabel">Do You Have Children?</label>
+                            <select id="sel_Children" name="sel_Children" aria-labelledby="Children-ariaLabel">
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Prefer not to say">Prefer not to say</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                        <input type="submit" value="Save" />
+                        </div>
+                        </form>	
+                </div><!--end #mypreferences-->
+            </div><!--end #myprofile-->
+            <div id="myfavorites" class="tab_content">
+               <ul class="followed_venues no_bullets">
+                  <li class="followed_venue">
+                    <div class="avatar">
+                      <a href="/venues/ps122"><img width="100" height="auto" title="PS122" src="images/featured_pic.jpg" alt="PS122"></a>
+                    </div>
+                    <div class="details">
+                      <h3>
+                        <a href="/venues/ps122">PS122</a>
+                      </h3>
+                      <h4><strong>Theater</strong> - East Village</h4>
+                    </div>
+                    <form method="post" class="unfollow_venue follow_venue_form" action="/users/frank-fumarola/followed_venues/laxmis-indian-grille"><div style="margin:0;padding:0"><input type="hidden" value="delete" name="_method"><input type="hidden" value="4N5NYu6VrtmHijxBNOi/2PwZK2xsO9P5ZOrssiC0uAQ=" name="authenticity_token"></div>
+                      <input type="hidden" value="Follow" name="follow_button_text" id="follow_button_text">
+                      <input type="hidden" value="Following" name="unfollow_button_text" id="unfollow_button_text">
+                      <input type="hidden" value="Unfollow" name="unfollow_button_hover_text" id="unfollow_button_hover_text">
+                      <button value="Following" type="submit" span="data-icon3" name="commit" class="unfollow js_event"><span data-icon="3">Following</span></button>
+                    </form>
+                  </li>
+                  <li class="followed_venue">
+                    <div class="avatar">
+                      <a href="/venues/ps122"><img width="100" height="auto" title="PS122" src="images/featured_pic.jpg" alt="PS122"></a>
+                    </div>
+                    <div class="details">
+                      <h3>
+                        <a href="/venues/ps122">PS122</a>
+                      </h3>
+                      <h4><strong>Theater</strong> - East Village</h4>
+                    </div>
+                    <form method="post" class="unfollow_venue follow_venue_form" action="/users/frank-fumarola/followed_venues/laxmis-indian-grille"><div style="margin:0;padding:0"><input type="hidden" value="delete" name="_method"><input type="hidden" value="4N5NYu6VrtmHijxBNOi/2PwZK2xsO9P5ZOrssiC0uAQ=" name="authenticity_token"></div>
+                      <input type="hidden" value="Follow" name="follow_button_text" id="follow_button_text">
+                      <input type="hidden" value="Following" name="unfollow_button_text" id="unfollow_button_text">
+                      <input type="hidden" value="Unfollow" name="unfollow_button_hover_text" id="unfollow_button_hover_text">
+                      <button value="Following" type="submit" span="data-icon3" name="commit" class="unfollow js_event"><span data-icon="3">Following</span></button>
+                    </form>
+                  </li>
+                </ul>
+            </div><!--end #myfavorites-->
+        </div><!--end #tab_container-->
+    </div><!--end #account-->
+</div><!--end #wrapper-->
+
+ 
+
+</body>
+</html>

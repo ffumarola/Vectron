@@ -1,0 +1,26 @@
+ <div id="main">
+    <div class="page_margins">
+      <div class="page"> 
+        <h1>Welcome to Usher Buddy!</h1>
+        <%= form_for("consumer", :url => user_session_path) do |f| %>
+	<div class="field">
+	  <%= f.label :zip_code, "Please enter your zip code:" %><br />
+	  <%= f.text_field :zip_code %>
+	</div><br />
+	How often do you attend the following types of events?<br /><br />
+	<table>
+	 <% EventType.all.each do |event_type| %>
+	    <tr><td><%= event_type.name %></td>
+		<td>    <%= f.collection_select(:event_type_id, InterestLevel.all, :value, :name) %></td></tr>
+	  <% end %>
+	</table>
+	<% end %>
+
+        
+        
+        <br />
+        <br />
+        <br />
+      </div>
+    </div>
+ </div>

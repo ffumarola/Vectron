@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'nevisBold';
+	src: url('../fonts/nevis-webfont.eot');
+	src: local('â˜º'), url('../fonts/nevis-webfont.woff') format('woff'), url('../fonts/nevis-webfont.ttf') format('truetype'), url('../fonts/nevis-webfont.svg#webfontL7HzHW6g') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1, h2, h3, h4, h5 { font-family:'Myriad Pro', Arial, Sans-Serif; color:#363b3f; }
+
+h1 { font-size:26px; }
+h2 { font-size:20px; }
+h3 { font-size:16px; }
+h4 { font-size:14px; }
+h5 { font-size:12px; }
+
+h2.signup { font-size:16px; font-weight:bold;margin-bottom:10px;}
+
+p { font-size:13px; color:#8f8f8f; line-height:1.6em; margin:10px 0px 10px 0px; }
+
+p.tagline {font-family:Arial, Sans-Serif;font-size:30px; color:white; margin:0; line-height:1.1;}
+#footer-wrap-landing p{color:#FFFFFF; line-height:2em; margin:0;}
+
+a { text-decoration:none; color:#363B3F; outline:none; }
+a:hover { text-decoration:underline;}
+
+#nav_left li a, #nav_right li a { font-family:'nevisBold',Arial; font-size:10px; color:#ccc; text-decoration:none; text-transform:uppercase; text-shadow:-2px 2px 2px #1a1d1f; }
+#nav_left li a:hover, #nav_right li a:hover { color:#fff; }
+
+.featured_button { font-size:18px; font-weight:bold; color:#fff; text-align:center; text-decoration:none; text-shadow:-1px 1px 1px #3f8621; }
+
+#featured h1 { text-transform:uppercase; }
+#featured p { margin:10px 0px 10px 0px; }
+
+#whats_next h2 { font-family:'nevisBold', Arial; font-size:18px; }
+#whats_next ol li span { font-family:'nevisBold', Arial; font-size:10px; color:#a5a5a5; text-transform:uppercase; }
+
+input { font-family:Arial; font-size:12px; font-weight:bold; color:#a5a5a5; }
+.button { font-size:11px; font-weight:bold; text-align:center; text-shadow:2px 2px 2px #000; color:#fff; }
+.su_button { font-size:11px; font-weight:bold; text-align:center; text-shadow:2px 2px 2px #000; color:#fff; }
+
+#signup_wrap h2 { font-family:'nevisBold', Arial; font-size:18px; }
+#signup_wrap span { font-family:'nevisBold', Arial; font-size:10px; color:#a5a5a5; text-transform:uppercase; }
+#signup h3 { color:#BF1E2D; font-size:19px; text-transform:uppercase;}
+
+#footer p { font-size:11px; font-weight:bold; text-transform:uppercase; }
+#footer li a { color:#888987; font-size:13px; font-family:"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;}
+
+.simplelist li { font-size:13px; color:#8f8f8f; line-height:1.6em; margin:10px 0px 10px 0px; }
